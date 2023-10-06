@@ -124,10 +124,10 @@ function App() {
 
       <Router>
         <Routes>
-          {/* <Route path="/" exact element={<Login />} /> */}
-          {/* <Route path='/formtab' exact element={<FormTab/>}/> */}
-          {/* <Route path="/register" exact element={<Register />} /> */}
-          {/* <Route path="/forgetpassword" exact element={<ForgetPassword />} /> */}
+          <Route path="/" exact element={<Login />} />
+          <Route path='/formtab' exact element={<FormTab/>}/>
+          <Route path="/register" exact element={<Register />} />
+          <Route path="/forgetpassword" exact element={<ForgetPassword />} />
         </Routes>
       </Router>
     </>
