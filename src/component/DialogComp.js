@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 const DialogComp = () => {
 const [open, setOpen] = useState(false)
+
 return (
     <>
     <Stack spacing={2}>
@@ -26,6 +27,7 @@ return (
             <Button autoFocus onClick={()=> setOpen(false)}>Submit</Button>
         </DialogActions>
     </Dialog>
+
     </>
   )
 }

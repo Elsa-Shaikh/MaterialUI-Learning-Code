@@ -41,13 +41,27 @@ const handleAutoChange = (e,newAuto)=>{
          renderInput={(params)=><TextField {...params} label='Skills'/>}
          value={auto}
          onChange={handleAutoChange}
-         freeSolo
+        //  freeSolo
          />
 </Stack>
+
+<Stack width='250px' spacing={2}>
+         {/* <Autocomplete 
+        //  options={date} 
+         renderInput={(params)=><TextField {...params} label='Date'/>}
+         value={auto}
+         onChange={handleAutoChange}
+         freeSolo
+         /> */}
+</Stack>
+
 
     </Box>
     </>
   )
+}
+const date = {
+
 }
 
 const skills = [

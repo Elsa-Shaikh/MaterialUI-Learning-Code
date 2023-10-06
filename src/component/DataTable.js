@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
+import { Card } from '@mui/material';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -36,11 +37,12 @@ const rows = [
 
 export default function DataTable() {
   return (
-    <div style={{ height: 400, width: '100%' }}>
+ <>
+ <Card sx={{ height: 400, width: '50%'}}>
       <DataGrid
-        rows={rows}
-        columns={columns}
-        initialState={{
+         rows={rows}
+         columns={columns}
+         initialState={{
           pagination: {
             paginationModel: { page: 0, pageSize: 5 },
           },
@@ -48,6 +50,7 @@ export default function DataTable() {
         pageSizeOptions={[5, 10]}
         checkboxSelection
       />
-    </div>
+ </Card>
+ </>
   );
 }
