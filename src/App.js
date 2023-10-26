@@ -43,6 +43,7 @@ import DatePicker from "./EditPicture/DatePicker";
 import TablePaginationComp from "./EditPicture/TablePaginationComp";
 import HoverEffect from "./EditPicture/HoverEffect";
 import SliderRange from "./EditPicture/SliderRange";
+import PasswordFieldVisible from "./Learning/PasswordFieldVisible";
 
 // function
 // useStore.useState({count:50});
@@ -121,13 +122,13 @@ function App() {
       {/* <SliderRange/> */}
 
       {/* <DialogComp/> */}
-
+     <PasswordFieldVisible/>
       <Router>
         <Routes>
-          <Route path="/" exact element={<Login />} />
-          <Route path='/formtab' exact element={<FormTab/>}/>
-          <Route path="/register" exact element={<Register />} />
-          <Route path="/forgetpassword" exact element={<ForgetPassword />} />
+          {/* <Route path="/" exact element={<Login />} /> */}
+          {/* <Route path='/formtab' exact element={<FormTab/>}/> */}
+          {/* <Route path="/register" exact element={<Register />} /> */}
+          {/* <Route path="/forgetpassword" exact element={<ForgetPassword />} /> */}
         </Routes>
       </Router>
     </>

@@ -50,7 +50,7 @@ const handleManage =(e)=>{
     <Box sx={{width:'80%', m:10,p:10}}>
     <TableContainer component={Paper} sx={{maxHeight:'300px'}}>
       <Button color='primary' variant='contained' sx={{m:"10px"}}>Add</Button>
-      <Button disabled={!check} color='secondary' variant='contained' onClick={handleManage}>Manage</Button>
+      <Button disabled={!check} color='secondary' variant='contained' onClick={handleManage}>Delete</Button>
         <Table aria-label='Simple Table' stickyHeader>
             <TableHead>
                 <TableRow>
